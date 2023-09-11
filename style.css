@@ -1,0 +1,40 @@
+#game {
+    background-image: url(./img/road.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 98vh;
+    width: 98vw;
+}
+
+#carPositions {
+    /* display: grid;
+    grid-template-columns: repeat(3, 33vw); */
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 8%;
+    left: 0;
+}
+
+#carPositions>div {
+    /* border: solid 4px yellow; */
+    text-align: center;
+}
+
+img {
+    width: 22vw;
+    height: 22vh;
+}
+
+#pos1 {
+    width: 38vw;
+}
+
+#pos2 {
+    width: 22vw;
+}
+
+#pos3 {
+    width: 38vw;
+}

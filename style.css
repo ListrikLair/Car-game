@@ -8,18 +8,11 @@
 }
 
 #carPositions {
-    /* display: grid;
-    grid-template-columns: repeat(3, 33vw); */
     display: flex;
     flex-direction: row;
     position: absolute;
     bottom: 8%;
     left: 0;
-}
-
-#carPositions>div {
-    /* border: solid 4px yellow; */
-    text-align: center;
 }
 
 img {
@@ -29,6 +22,7 @@ img {
 
 #pos1 {
     width: 38vw;
+    text-align: end;
 }
 
 #pos2 {
@@ -42,32 +36,70 @@ img {
 #header{
     display: flex;
     flex-direction: row;
+    background-color: darkblue;
+    background-image: linear-gradient(to top, lightblue 25%, rgba(0,0,0,0) 0%);
+    width: 98vw;
+    height: 15vh;
 }
 
 #points{
     position: absolute;
-    left: 2%;
-    top: 2%;
-    width: 30vw;
+    left: 14%;
+    top: 3%;
+    width: 12vw;
     height: 10vh;
     font-size: 250%;
+    background-color: black;
+    color: lightblue;
+    border: solid 1px black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 10vh;
+    z-index: 2;
+}
+
+#pointsText{
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    width: 12vw;
+    height: 10vh;
+    font-size: 250%;
+    background-color: black;
+    color: lightblue;
+    border: solid 1px black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 10vh;
 }
 
 #speed{
     position: absolute;
     left: 50%;
-    top: 5%;
-    width: 10vw;
+    top: 3%;
+    width: 20vw;
     height: 10vh;
-    font-size: 400%;
-    margin-left: -5vw;
+    font-size: 230%;
+    margin-left: -10vw;
+    background-color: black;
+    color: lightblue;
+    border: solid 1px black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 10vh;
 }
 
 #timer{
     position: absolute;
     right: 5%;
-    top: 5%;
+    top: 3%;
     width: 10vw;
     height: 10vh;
     font-size: 400%;
+    background-color: black;
+    color: lightblue;
+    border: solid 1px black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 10vh;
 }

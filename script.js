@@ -3,6 +3,7 @@ let app = document.getElementById('app');
 let carPng = '<img src="./img/car.png" alt="" />';
 let carPos = ['', 'active', '']
 let points = 0;
+let speed = 60;
 let secTimer = 0;
 let minTimer = 0;
 
@@ -13,8 +14,9 @@ function updateView() {
     app.innerHTML = /*HTML*/`
     <div id="game">
         <div id="header">
-            <div id="points">${points.toString().padStart(4, 0)} Points</div>
-            <div id="speed">Speed</div>
+            <div id="points">${points.toString().padStart(4, 0)}</div>
+            <div id="pointsText">Points:</div>
+            <div id="speed">${speed}km/h</div>
             <div id="timer">${minTimer.toString().padStart(2, 0)}:${secTimer.toString().padStart(2, 0)}</div>
         </div>
         <div id="playArea">
